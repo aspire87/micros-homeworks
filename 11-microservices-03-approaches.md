@@ -69,10 +69,10 @@
 Исходя из  требований к мониторингу я бы остановил свой выбор  на стеке Prometheus + Grafana (можно и Victoria Metrics + Grafana). Второй стек  предпочтительнее, т.к. Prometheus не  умеет  горизотально масштабироваться и не хранит метрики более двух  недель. Огромное количество  экспортеров (Node exporter, Postgres exporter, MongoDB exporter) повзоляет из  коробки  получаться необходимые  метрики  сервисов и покрыть  практически все потребности в  мониторинге. При необходимости можно написать и свой собственный экспортер.
 
 Итог:
-Сбор метрик - экспортеры (Node exporter, Postgres exporter, Blackbox exporter  и др.)
-Хранение - Victoria Metrics
-Визуализация  - Grafana
-Алертинг - Grafana/Alert Manager
+- Сбор метрик - экспортеры (Node exporter, Postgres exporter, Blackbox exporter  и др.)
+- Хранение - Victoria Metrics
+- Визуализация  - Grafana
+- Алертинг - Grafana/Alert Manager
 
 ## Задача 4: Логи * (необязательная)
 
